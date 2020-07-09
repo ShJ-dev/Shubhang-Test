@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="mytest.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!--Header-->
+   <div id="header">
+    <nav
+    id="nav-bar"
+    class="navbar fixed-top navbar-expand-md navbar-collapse navbar-light bg-light"
+  >
+    <a href="#">
+      <img
+        id="header-img"
+        alt="company_logo"
+        src="./images/logo.png"
+        width="80"
+        height="40"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#video">Models</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+   </div>
+
+    <!--Intro-->
+    <div id="services" class="jumbotron jumbotron-fluid">
+      <div class="container features">
+        <ul>
+          <li>
+            <h3>Quality One</h3>
+            <pre style="color: whitesmoke;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, commodi.</pre
+            >
+          </li>
+          <li>
+            <h3>Quality Two</h3>
+            <pre style="color: whitesmoke;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, commodi lorem  </pre
+            >
+          </li>
+          <li>
+            <h3>Quality Three</h3>
+            <pre style="color: whitesmoke;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, commodi.</pre
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Video-->
+    <h3 class="display-4 text-center">Video</h3>
+    <hr class="border border-dark" style="width:50%">
+    <div class="container" id="video">
+      <div class="row">
+        <div class="col-md-4 mx-auto">
+          <iframe
+            width="350"
+            height="250"
+            src="https://www.youtube.com/embed/IE-LpLibsLA"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+<br>
+    <!--Models-->
+    <h3 class="display-4 text-center">Models</h3>
+    <hr class="border border-dark" style="width:50%">
+    <div id="Models" class="flex-container">
+      <div class="item-info m-3">
+        <h3>lorem</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae at laudantium magnam autem facilis!</p>
+        <footer class="card-footer">
+          <button class="btn btn-sm btn-primary">Know More</button>
+        </footer>
+      </div>
+      <div class="item-info m-3">
+        <h3>lorem</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae at laudantium magnam autem facilis!</p>
+        <footer class="card-footer">
+          <button class="btn btn-sm btn-primary">Know More</button>
+        </footer>
+      </div>
+      <div class="item-info m-3">
+        <h3>lorem</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae at laudantium magnam autem facilis!</p>
+        <footer class="card-footer">
+          <button class="btn btn-sm btn-primary">Know More</button>
+        </footer>
+      </div>
+    </div>
+
+    <!--Form-->
+    <div class="container-fluid form-container">
+      <h4>Subscribe to our online newsletter</h4>
+      <form id="form">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputName4">Name:</label>
+            <input type="text" class="form-control"
+            placeholder="Type your Name..." />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEmail4">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Type your Email..." />
+          </div>
+          <div class="form-group col-md-1">
+            <br />
+            <input
+              id="submit"
+              type="submit"
+              class="form-control btn btn-lg btn-danger ml-2"
+              value="Subscribe"
+              onclick="submit()"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--Contact-->
+    <h3 class="display-4 text-center">Contact</h3>
+    <hr class="border border-dark" style="width:50%">
+    <div id="contact" class="container">
+      <div class="d-flex flex-row justify-content-lg-center">
+        <a href="#" class="fa fa-instagram p-3 m-4"></a>
+        <a href="#" class="fa fa-facebook p-3 m-4"></a>
+        <a href="#" class="fa fa-github p-3 m-4"></a>
+        <a href="#" class="fa fa-linkedin p-3 m-4"></a>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+      Test Site, Copyright &copy; 2020
+    </footer>
+
+    <!--Links-->
+    <script src="./mytest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </body>
+</html>
